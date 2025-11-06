@@ -56,8 +56,7 @@ body {
 .hero { padding: 56px 0 36px; }
 .copy h1 { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: clamp(34px, 5vw, 42px); line-height: 1.04; margin: 0 0 6px; padding: 0; letter-spacing: -0.012em; color: #000; }
 .copy p { margin: 6px 0; color: var(--muted); max-width: 62ch; font-size: 15.5px; line-height: 1.4; }
-.header-text { font-family: "Satoshi", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; font-weight: 700; letter-spacing: -2px; color: #000; }
-.section-label { font-variant: small-caps; color: #666; font-weight: 400; }
+.section-label { color: #000; font-weight: 400; }
 .link { color: #666; text-decoration: none; border-bottom: none; }
 .link:hover { color: #fff; background: #000; border-color: #000; padding-inline: 2px; }
 .copy a { transition: background-color 120ms ease, color 120ms ease, border-color 120ms ease; }
