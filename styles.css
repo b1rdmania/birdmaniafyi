@@ -55,7 +55,7 @@ body {
 .hero { padding: 56px 0 36px; }
 .copy h1 { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: clamp(34px, 5vw, 42px); line-height: 1.04; margin: 0 0 6px; padding: 0; letter-spacing: -0.012em; color: #000; }
 .copy p { margin: 6px 0; color: var(--muted); max-width: 62ch; font-size: 15.5px; line-height: 1.65; }
-.link { color: #000; text-decoration: none; border-bottom: none; }
+.link { color: #666; text-decoration: none; border-bottom: none; }
 .link:hover { color: #fff; background: #000; border-color: #000; padding-inline: 2px; }
 .copy a { transition: background-color 120ms ease, color 120ms ease, border-color 120ms ease; }
 .divider { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; color: #000; letter-spacing: 2px; margin: 8px 0 10px; user-select: none; }
@@ -109,10 +109,11 @@ body {
   .grid.two { grid-template-columns: 1fr; gap: 24px; }
   .hero { padding: 40px 0 28px; }
   .left-col { display: flex; flex-direction: column; align-items: flex-start; }
-  .left-col .media { order: 0; }
+  .left-col .media { order: 0; display: block; }
   .left-col .brand-title { order: 1; }
   .brand-title { font-size: clamp(32px, 8vw, 40px); margin-bottom: 16px; }
-  .media.small { max-width: 240px; margin: 0 auto 24px; }
+  .media.small { max-width: 240px; margin: 0 auto 24px; display: block; }
+  .photo { display: block; }
   .copy { margin-top: 0; }
   .copy p { font-size: 16px; line-height: 1.7; margin: 8px 0; }
   .divider { margin: 12px 0 14px; }
@@ -122,10 +123,11 @@ body {
 @media (max-width: 560px) {
   .container { width: 92%; }
   .hero { padding: 32px 0 24px; }
-  .left-col .media { order: 0; }
+  .left-col .media { order: 0; display: block; }
   .left-col .brand-title { order: 1; }
   .brand-title { font-size: clamp(28px, 9vw, 36px); margin-bottom: 12px; }
-  .media.small { max-width: 200px; margin-bottom: 20px; }
+  .media.small { max-width: 200px; margin-bottom: 20px; display: block; }
+  .photo { display: block; }
   .copy p { font-size: 15.5px; line-height: 1.7; margin: 6px 0; }
   .divider { margin: 10px 0 12px; }
   .link { padding: 2px 2px; }
