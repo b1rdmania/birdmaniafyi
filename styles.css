@@ -29,6 +29,8 @@ body {
   gap: 24px;
 }
 .grid.two { grid-template-columns: minmax(260px, 0.9fr) 1.1fr; align-items: start; }
+.
+.copy { align-self: start; }
 
 .grid.narrow { grid-template-columns: 1fr; }
 
