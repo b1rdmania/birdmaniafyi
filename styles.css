@@ -12,14 +12,15 @@
 html, body { height: 100%; }
 body {
   margin: 0;
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
   color: var(--text);
   background: var(--bg);
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 .container {
-  width: min(900px, 86%);
+  width: min(580px, 86%);
   margin-inline: auto;
 }
 
@@ -33,7 +34,7 @@ body {
 .media { margin-top: 0; padding-top: 0; }
 
 .left-col { align-self: start; }
-.brand-title { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", Courier, monospace; font-size: clamp(34px, 5vw, 42px); line-height: 1.04; margin: 0 0 10px; letter-spacing: -0.012em; color: #000; }
+.brand-title { font-family: "Neue Haas Grotesk Display", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: clamp(34px, 5vw, 42px); font-weight: 700; line-height: 1.04; margin: 0 0 10px; letter-spacing: -2px; color: #000; }
 
 .grid.narrow { grid-template-columns: 1fr; }
 
@@ -54,7 +55,9 @@ body {
 
 .hero { padding: 56px 0 36px; }
 .copy h1 { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: clamp(34px, 5vw, 42px); line-height: 1.04; margin: 0 0 6px; padding: 0; letter-spacing: -0.012em; color: #000; }
-.copy p { margin: 6px 0; color: var(--muted); max-width: 62ch; font-size: 15.5px; line-height: 1.65; }
+.copy p { margin: 6px 0; color: var(--muted); max-width: 62ch; font-size: 15.5px; line-height: 1.4; }
+.header-text { font-family: "Neue Haas Grotesk Display", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700; letter-spacing: -2px; color: #000; }
+.section-label { font-variant: small-caps; color: #666; font-weight: 400; }
 .link { color: #666; text-decoration: none; border-bottom: none; }
 .link:hover { color: #fff; background: #000; border-color: #000; padding-inline: 2px; }
 .copy a { transition: background-color 120ms ease, color 120ms ease, border-color 120ms ease; }
@@ -105,7 +108,7 @@ body {
 .site-footer a:hover { color: var(--text); }
 
 @media (max-width: 900px) {
-  .container { width: min(720px, 90%); }
+  .container { width: min(580px, 90%); }
   .grid.two { grid-template-columns: 1fr; gap: 24px; }
   .hero { padding: 40px 0 28px; }
   .left-col { display: flex; flex-direction: column; align-items: flex-start; }
