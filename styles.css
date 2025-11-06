@@ -74,7 +74,7 @@ body {
 .media { display: flex; align-items: flex-start; justify-content: center; }
 .media.small { max-width: 280px; transform: translateY(-6px); }
 .photo { width: 100%; aspect-ratio: 4/5; border-radius: 6px; background:
-  url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat; border: 1px solid #000; filter: grayscale(12%);
+  url('/avatar.png') center/cover no-repeat; border: 1px solid #000; filter: grayscale(12%);
 }
 
 .section { padding: 64px 0; }
