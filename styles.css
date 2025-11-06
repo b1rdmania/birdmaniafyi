@@ -1,11 +1,11 @@
 :root {
-  --bg: #0e0e0e;
-  --panel: #151515;
-  --text: #eaeaea;
-  --muted: #b6b6b6;
-  --brand: #4ee3c2;
-  --brand-ink: #0a3c33;
-  --border: #222;
+  --bg: #ffffff;
+  --panel: #f7f7f7;
+  --text: #111111;
+  --muted: #5b5b5b;
+  --brand: #111111;
+  --brand-ink: #000000;
+  --border: #e5e5e5;
 }
 
 * { box-sizing: border-box; }
@@ -14,8 +14,7 @@ body {
   margin: 0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
   color: var(--text);
-  background: radial-gradient(1200px 600px at 10% -5%, #1a1a1a 0%, var(--bg) 55%) no-repeat,
-              var(--bg);
+  background: var(--bg);
   line-height: 1.6;
 }
 
@@ -61,18 +60,17 @@ body {
 .cta { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin: 10px 0 8px; }
 .btn {
   display: inline-flex; align-items: center; justify-content: center;
-  border: 1px solid var(--border); color: var(--text); background: #141414; text-decoration: none;
-  padding: 10px 14px; border-radius: 10px; transition: 120ms ease; font-weight: 600;
+  border: 1px solid #111; color: #111; background: transparent; text-decoration: none;
+  padding: 9px 12px; border-radius: 8px; transition: 120ms ease; font-weight: 600;
 }
-.btn:hover { border-color: #2b2b2b; transform: translateY(-1px); }
-.btn-primary { background: linear-gradient(180deg, var(--brand), #36bba0); color: #051e19; border-color: transparent; box-shadow: 0 8px 24px rgba(78, 227, 194, 0.18); }
-.btn-primary:hover { filter: brightness(0.98); }
+.btn:hover { background: #111; color: #fff; }
+.btn-primary { background: #111; color: #fff; border-color: #111; box-shadow: none; }
+.btn-primary:hover { filter: none; opacity: 0.92; }
 
 .proof { color: var(--muted); font-size: 14px; margin-top: 8px; }
 
 .hero-media { display: flex; align-items: center; justify-content: center; }
-.photo { width: 100%; aspect-ratio: 4/5; border-radius: 16px; background:
-  linear-gradient(180deg, rgba(78,227,194,0.15), transparent 40%),
+.photo { width: 100%; aspect-ratio: 4/5; border-radius: 6px; background:
   url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat; border: 1px solid var(--border);
 }
 
