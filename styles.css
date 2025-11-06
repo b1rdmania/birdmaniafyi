@@ -106,20 +106,24 @@ body {
 
 @media (max-width: 900px) {
   .container { width: min(720px, 90%); }
-  .grid { grid-template-columns: 1fr; gap: 20px; }
+  .grid.two { grid-template-columns: 1fr; gap: 24px; }
   .hero { padding: 40px 0 28px; }
-  .brand-title { font-size: clamp(28px, 8vw, 36px); margin-bottom: 8px; }
-  .media.small { max-width: 220px; }
-  .copy p { font-size: 16px; line-height: 1.7; }
-  .divider { margin: 6px 0 8px; }
+  .left-col { display: flex; flex-direction: column; align-items: flex-start; }
+  .brand-title { font-size: clamp(32px, 8vw, 40px); margin-bottom: 16px; }
+  .media.small { max-width: 240px; margin: 0 auto 24px; }
+  .copy { margin-top: 0; }
+  .copy p { font-size: 16px; line-height: 1.7; margin: 8px 0; }
+  .divider { margin: 12px 0 14px; }
   .cards { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 560px) {
   .container { width: 92%; }
   .hero { padding: 32px 0 24px; }
-  .media.small { max-width: 180px; }
-  .copy p { font-size: 15.5px; line-height: 1.7; }
+  .brand-title { font-size: clamp(28px, 9vw, 36px); margin-bottom: 12px; }
+  .media.small { max-width: 200px; margin-bottom: 20px; }
+  .copy p { font-size: 15.5px; line-height: 1.7; margin: 6px 0; }
+  .divider { margin: 10px 0 12px; }
   .link { padding: 2px 2px; }
 }
 
