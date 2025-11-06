@@ -2,7 +2,7 @@
   --bg: #ffffff;
   --panel: #f7f7f7;
   --text: #111111;
-  --muted: #5b5b5b;
+  --muted: #111111;
   --brand: #111111;
   --brand-ink: #000000;
   --border: #e5e5e5;
@@ -55,11 +55,11 @@ body {
 .hero { padding: 56px 0 36px; }
 .copy h1 { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: clamp(34px, 5vw, 42px); line-height: 1.04; margin: 0 0 6px; padding: 0; letter-spacing: -0.012em; color: #000; }
 .copy p { margin: 6px 0; color: var(--muted); max-width: 62ch; font-size: 15.5px; line-height: 1.65; }
-.link { color: #000; text-decoration: none; border-bottom: 1px solid rgba(0,0,0,0.3); }
+.link { color: #000; text-decoration: none; border-bottom: 1px solid #000; }
 .link:hover { color: #fff; background: #000; border-color: #000; padding-inline: 2px; }
 .copy a { transition: background-color 120ms ease, color 120ms ease, border-color 120ms ease; }
-.divider { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; color: #bdbdbd; letter-spacing: 2px; margin: 8px 0 10px; user-select: none; }
-.divider { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; color: #bdbdbd; letter-spacing: 2px; margin: 10px 0 12px; user-select: none; }
+.divider { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; color: #000; letter-spacing: 2px; margin: 8px 0 10px; user-select: none; }
+.divider { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; color: #000; letter-spacing: 2px; margin: 10px 0 12px; user-select: none; }
 .hero-copy h1 { font-size: clamp(32px, 5vw, 48px); line-height: 1.1; margin: 0 0 12px; }
 .lead { color: var(--muted); font-size: 18px; margin: 0 0 22px; }
 
@@ -109,6 +109,8 @@ body {
   .grid.two { grid-template-columns: 1fr; gap: 24px; }
   .hero { padding: 40px 0 28px; }
   .left-col { display: flex; flex-direction: column; align-items: flex-start; }
+  .left-col .media { order: 0; }
+  .left-col .brand-title { order: 1; }
   .brand-title { font-size: clamp(32px, 8vw, 40px); margin-bottom: 16px; }
   .media.small { max-width: 240px; margin: 0 auto 24px; }
   .copy { margin-top: 0; }
@@ -120,6 +122,8 @@ body {
 @media (max-width: 560px) {
   .container { width: 92%; }
   .hero { padding: 32px 0 24px; }
+  .left-col .media { order: 0; }
+  .left-col .brand-title { order: 1; }
   .brand-title { font-size: clamp(28px, 9vw, 36px); margin-bottom: 12px; }
   .media.small { max-width: 200px; margin-bottom: 20px; }
   .copy p { font-size: 15.5px; line-height: 1.7; margin: 6px 0; }
