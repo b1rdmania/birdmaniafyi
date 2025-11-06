@@ -132,6 +132,7 @@ body {
   .photo { display: block !important; width: 180px; height: 225px; min-height: 225px; }
   .copy { margin-top: 0; }
   .copy p { font-size: 14px; line-height: 1.4; margin: 4px 0; }
+  .mobile-hide { display: none; }
   .divider { margin: 6px 0 8px; font-size: 12px; }
   .link { padding: 2px 2px; }
 }
