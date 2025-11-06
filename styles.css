@@ -19,26 +19,20 @@ body {
 }
 
 .container {
-  width: min(1100px, 92%);
+  width: min(960px, 88%);
   margin-inline: auto;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  gap: 56px;
+  gap: 32px;
 }
+.grid.two { grid-template-columns: minmax(260px, 0.9fr) 1.1fr; align-items: start; }
 
 .grid.narrow { grid-template-columns: 1fr; }
 
-.site-header {
-  position: sticky;
-  top: 0;
-  backdrop-filter: blur(6px);
-  background: color-mix(in oklab, var(--bg), transparent 35%);
-  border-bottom: 1px solid var(--border);
-  z-index: 10;
-}
+.site-header { position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid var(--border); z-index: 10; }
 
 .site-header .container {
   display: flex;
@@ -47,13 +41,17 @@ body {
   padding: 14px 0;
 }
 
-.brand { color: var(--text); text-decoration: none; font-weight: 700; letter-spacing: 0.2px; }
+.brand { color: var(--text); text-decoration: none; font-weight: 800; letter-spacing: 0.3px; font-size: 14px; }
 
 .nav { display: flex; gap: 18px; align-items: center; }
 .nav a { color: var(--muted); text-decoration: none; }
 .nav a:hover { color: var(--text); }
 
-.hero { padding: 80px 0 40px; }
+.hero { padding: 56px 0 32px; }
+.copy h1 { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: clamp(34px, 5.2vw, 44px); line-height: 1.1; margin: 0 0 8px; letter-spacing: -0.01em; color: #000; }
+.copy p { margin: 8px 0; color: var(--muted); max-width: 60ch; }
+.link { color: #000; text-decoration: none; border-bottom: 1px solid #cfcfcf; }
+.link:hover { border-color: #000; }
 .hero-copy h1 { font-size: clamp(32px, 5vw, 48px); line-height: 1.1; margin: 0 0 12px; }
 .lead { color: var(--muted); font-size: 18px; margin: 0 0 22px; }
 
@@ -71,7 +69,7 @@ body {
 
 .hero-media { display: flex; align-items: center; justify-content: center; }
 .media { display: flex; align-items: flex-start; justify-content: center; }
-.media.small { max-width: 360px; }
+.media.small { max-width: 300px; }
 .photo { width: 100%; aspect-ratio: 4/5; border-radius: 6px; background:
   url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat; border: 1px solid var(--border);
 }
