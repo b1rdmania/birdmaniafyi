@@ -32,6 +32,9 @@ body {
 .copy { align-self: start; margin-top: 0; padding-top: 0; }
 .media { margin-top: 0; padding-top: 0; }
 
+.left-col { align-self: start; }
+.brand-title { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", Courier, monospace; font-size: clamp(34px, 5vw, 42px); line-height: 1.04; margin: 0 0 10px; letter-spacing: -0.012em; color: #000; }
+
 .grid.narrow { grid-template-columns: 1fr; }
 
 .site-header { position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid var(--border); z-index: 10; }
