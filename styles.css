@@ -52,6 +52,7 @@ body {
 .copy p { margin: 8px 0; color: var(--muted); max-width: 60ch; }
 .link { color: #000; text-decoration: none; border-bottom: 1px solid #cfcfcf; }
 .link:hover { border-color: #000; }
+.divider { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; color: #bdbdbd; letter-spacing: 2px; margin: 10px 0 12px; user-select: none; }
 .hero-copy h1 { font-size: clamp(32px, 5vw, 48px); line-height: 1.1; margin: 0 0 12px; }
 .lead { color: var(--muted); font-size: 18px; margin: 0 0 22px; }
 
