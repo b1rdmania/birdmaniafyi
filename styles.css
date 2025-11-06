@@ -124,12 +124,12 @@ body {
 @media (max-width: 560px) {
   .container { width: 92%; }
   .hero { padding: 20px 0 16px; }
-  .left-col { display: flex; flex-direction: row; align-items: flex-start; gap: 12px; }
-  .left-col .media { order: 0; display: block !important; width: auto; margin: 0; }
+  .left-col { display: flex; flex-direction: column; align-items: flex-start; }
+  .left-col .media { order: 0; display: block !important; width: 100%; margin: 0 0 8px 0; }
   .left-col .brand-title { order: 1; margin: 0; }
   .brand-title { font-size: clamp(24px, 8vw, 32px); margin-bottom: 0; line-height: 1.1; }
-  .media.small { max-width: 120px; margin: 0; display: block !important; width: 120px; }
-  .photo { display: block !important; width: 120px; height: 150px; min-height: 150px; }
+  .media.small { max-width: 180px; margin: 0 0 8px 0; display: block !important; width: 180px; }
+  .photo { display: block !important; width: 180px; height: 225px; min-height: 225px; }
   .copy { margin-top: 0; }
   .copy p { font-size: 14px; line-height: 1.4; margin: 4px 0; }
   .divider { margin: 6px 0 8px; font-size: 12px; }
