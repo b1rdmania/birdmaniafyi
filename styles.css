@@ -72,9 +72,9 @@ body {
 
 .hero-media { display: flex; align-items: center; justify-content: center; }
 .media { display: flex; align-items: flex-start; justify-content: center; }
-.media.small { max-width: 280px; transform: translateY(-6px); }
+.media.small { max-width: 280px; }
 .photo { width: 100%; aspect-ratio: 4/5; border-radius: 6px; background:
-  url('/avatar.png') center/cover no-repeat; border: 1px solid #000; filter: grayscale(12%);
+  url('/avatar.png') center/contain no-repeat; filter: grayscale(12%);
 }
 
 .section { padding: 64px 0; }
